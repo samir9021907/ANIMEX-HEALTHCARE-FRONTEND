@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FAQ } from '../types';
-import { COMPANY_DETAILS } from '../../server/data/seedData';
+import { COMPANY_DETAILS } from '../data/seedData';
 import { useLanguage } from '../context/LanguageContext';
 import { 
   Building2, 
@@ -94,7 +94,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ faqs, onSubmitEnquiry 
               <Users className="w-4 h-4 text-animex-orange-400" />
               <span>Board of Directors</span>
             </div>
-            {COMPANY_DETAILS.directors.map((dir, idx) => (
+            {COMPANY_DETAILS.directors.map((dir: any, idx: number) => (
               <div key={idx} className="space-y-0.5 border-t border-slate-700/50 pt-1.5 first:border-t-0 first:pt-0">
                 <div className="font-bold text-white">{dir.name}</div>
                 <div className="text-[10px] text-slate-400">DIN: {dir.din} ({dir.designation})</div>

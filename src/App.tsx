@@ -11,7 +11,7 @@ import { AdminDashboard } from './pages/AdminDashboard';
 import { ProductDetailModal } from './components/ui/ProductDetailModal';
 import { LanguageProvider } from './context/LanguageContext';
 import { Product, Dealer, Enquiry } from './types';
-import { PRODUCTS, CATEGORIES, DISEASES, DEALERS, BLOGS, TESTIMONIALS, FAQS } from '../server/data/seedData';
+import { PRODUCTS, CATEGORIES, DISEASES, DEALERS, BLOGS, TESTIMONIALS, FAQS } from './data/seedData';
 import { ArrowLeft } from 'lucide-react';
 
 export const App: React.FC = () => {
@@ -181,7 +181,7 @@ export const App: React.FC = () => {
                 className="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-animex-orange-500 font-black text-xs px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm transition-all hover:scale-105"
               >
                 <ArrowLeft className="w-4 h-4 text-animex-orange-500" />
-                <span>← Back / मागे जा</span>
+                <span>â† Back / à¤®à¤¾à¤—à¥‡ à¤œà¤¾</span>
               </button>
 
               <div className="text-[11px] font-extrabold text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
