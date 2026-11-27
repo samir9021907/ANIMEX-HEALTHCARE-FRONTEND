@@ -70,15 +70,6 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Language Switcher Dropdown */}
             <LanguageSwitcher variant="topbar" />
 
-            {/* Admin CMS Access Link */}
-            <button
-              onClick={() => setActiveTab('admin')}
-              className="flex items-center gap-1 text-[11px] bg-animex-orange-500/20 text-animex-orange-400 hover:bg-animex-orange-500 hover:text-white px-2.5 py-0.5 rounded-full border border-animex-orange-500/30 transition-all font-semibold"
-            >
-              <ShieldCheck className="w-3 h-3" />
-              <span>{t('cmsAdmin')}</span>
-            </button>
-
             {/* Dark / Light Toggle */}
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -188,16 +179,7 @@ export const Header: React.FC<HeaderProps> = ({
           <LanguageSwitcher variant="mobile" />
 
           <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-2">
-            <button
-              onClick={() => {
-                setActiveTab('admin');
-                setMobileMenuOpen(false);
-              }}
-              className="flex items-center justify-center gap-2 w-full bg-animex-blue-50 dark:bg-slate-800 text-animex-blue-600 dark:text-sky-400 py-2.5 rounded-xl font-bold text-xs"
-            >
-              <ShieldCheck className="w-4 h-4" />
-              <span>{t('cmsAdmin')}</span>
-            </button>
+            
           </div>
         </div>
       )}
